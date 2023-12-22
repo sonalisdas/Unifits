@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/log_in_styles.css">
+    <title>Log In</title>
+    
+</head>
+<body>
+    <div class="head">
+        <b class="sn">kheertthana 2160489</b>
+        <a class="log" href="log_in.html"><b>Log in</b><img src="images/user (1).png" alt="log" class="img1"></a>
+    </div>
+    <div class="nav">
+        <b class="topic">UNIFITS</b>
+        <div class="list">
+            <a href="home.php">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="stockists.html">Stockists</a>
+            <a href="Customer Care.html">Customer Care</a>
+        </div>  
+    </div>
+    <div class="lg1">
+        <div>
+            <img src="images/img_lg.png" class="lg1a">
+        </div>
+        <div class="lg1b">
+            <form action="check1.php" onsubmit="return validform()" method="post" >
+            <input type="text" placeholder="Username" class="user" id="user" name="user">
+            <hr>
+            <input type="password" placeholder="Password" class="pass" id="pass" name="pass" minlength="6" >
+            <hr>
+            <input type="submit" value="Log In" class="log_in" name="login" >
+            <p class="lg2">Don't have an account? <b><a href="Sign_up.html">Sign Up</a></b></p>
+            </form>
+        </div>
+    </div>
+    <div class="div5">
+        <div class="p4">STAY CONNECTED <br>
+            <img src="images/twitter.png" alt="tw" class="img4">
+            <img src="images/fb.png" alt="fb" class="img4">
+            <img src="images/ig.png" alt="" class="img4">
+        </div>
+        <div class="p5">© 2023 by UNI-FITS. Powered and secured by Bit by Bit</div>
+        <div class="p6" >NEED ASSISTANCE?
+            <p class="p7">123-456-7890 <br>unifits@gmil.com</p>
+        </div>
+    </div>
+    <script>
+        function validform()
+        {
+            var name = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            if(name == "" || pass == "" )
+            {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Sign_up_styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <b class="sn">kheertthana 2160489</b>
+        <a class="log" href="log_in.html"><b>Log in</b><img src="images/user (1).png" alt="log" class="img1"></a>
+    </div>
+    <div class="nav">
+        <b class="topic">UNIFITS</b>
+        <div class="list">
+            <a href="home.php">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="stockists.html">Stockists</a>
+            <a href="Customer Care.html">Customer Care</a>
+        </div>  
+    </div>
+    <div class="lg1">
+        <div>
+            <img src="images/img_lg.png" class="lg1a">
+        </div>
+        <div class="lg1b">
+            <form action="check.php" onsubmit="return validform()">
+                <input type="text" placeholder="Full Name" class="lg1b1" id="fullname" name="fullname">
+                <hr>
+                <input type="email" placeholder="Email" class="lg1b1" id="email" name="email">
+                <hr>
+                <input type="text" placeholder="Username" class="lg1b1" id="uname" name="uname" >
+                <hr>
+                <input type="password" placeholder="Password" class="lg1b1" id="pass" name="pass" minlength="6" >
+                <hr>
+                <input type="password" placeholder="Repeat password" class="lg1b1" id="rpass" name="rpass" minlength="6">
+                <hr>
+                <input type="submit" value="Sign Up" class="log_in">
+            </form>
+            <p class="lg2">Have an account? <b><a href="log_in.html">Log In</a></b></p>
+            
+        </div>
+    </div>
+    <div class="div5">
+        <div class="p4">STAY CONNECTED <br>
+            <img src="images/twitter.png" alt="tw" class="img4">
+            <img src="images/fb.png" alt="fb" class="img4">
+            <img src="images/ig.png" alt="" class="img4">
+        </div>
+        <div class="p5">© 2023 by UNI-FITS. Powered and secured by Bit by Bit</div>
+        <div class="p6" >NEED ASSISTANCE?
+            <p class="p7">123-456-7890 <br>unifits@gmil.com</p>
+        </div>
+    </div>
+    <script>
+        function validform(){
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var uname = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+            var rpass = document.getElementById("rpass").value;
+
+            if(fullname == "" || email == "" || uname == ""|| pass== "" || rpass=="")
+            {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            alert("Logged in successfully!");
+            return true;
+
+        }
+    </script>
+</body>
+</html>
